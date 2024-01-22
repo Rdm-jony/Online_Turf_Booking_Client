@@ -8,8 +8,8 @@ class ProfileRepo {
   static Future<Map> fatchProfileInfo() async {
     try {
       var email = FirebaseAuth.instance.currentUser?.email;
-      var response = await http
-          .get(Uri.parse("http://192.168.201.236:5000/users/${email}"));
+      var response = await http.get(Uri.parse(
+          "https://play-spot-git-main-rdm-jony.vercel.app/users/${email}"));
       if (response.statusCode == 200) {
         var jsonReponse = jsonDecode(response.body);
         return jsonReponse;
@@ -24,7 +24,8 @@ class ProfileRepo {
     try {
       var email = user?.email;
       var response = await http.put(
-          Uri.parse("http://192.168.201.236:5000/user/photo/${email}"),
+          Uri.parse(
+              "https://play-spot-git-main-rdm-jony.vercel.app/user/photo/${email}"),
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(imageUrl));
 

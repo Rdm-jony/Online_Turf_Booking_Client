@@ -7,8 +7,8 @@ class NavbarRepo {
   static Future<String> fatchUserRole() async {
     try {
       var email = FirebaseAuth.instance.currentUser?.email;
-      var response = await http
-          .get(Uri.parse("http://192.168.201.236:5000/userRole/${email}"));
+      var response = await http.get(Uri.parse(
+          "https://play-spot-git-main-rdm-jony.vercel.app/userRole/${email}"));
       if (response.statusCode == 200) {
         var jsonResponse = jsonDecode(response.body);
 

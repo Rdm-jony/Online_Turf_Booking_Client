@@ -33,7 +33,7 @@ class ProfileInfoRepo {
 
     try {
       var response = await http.put(
-          Uri.parse("http://192.168.201.236:5000/users"),
+          Uri.parse("https://play-spot-git-main-rdm-jony.vercel.app/users"),
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(userInfo));
 

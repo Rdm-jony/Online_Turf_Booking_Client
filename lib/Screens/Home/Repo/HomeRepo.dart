@@ -45,8 +45,8 @@ class HomeRepo {
 
   static Future<List> fatchCategoryOfDivision() async {
     try {
-      var response =
-          await http.get(Uri.parse("http://192.168.201.236:5000/division"));
+      var response = await http.get(
+          Uri.parse("https://play-spot-git-main-rdm-jony.vercel.app/division"));
       if (response.statusCode == 200) {
         var jsonReponse = jsonDecode(response.body);
 

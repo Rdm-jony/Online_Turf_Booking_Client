@@ -10,8 +10,8 @@ class MyBookingRepo {
       List<MybookingModel> allBookings = [];
       var email = FirebaseAuth.instance.currentUser?.email;
 
-      var response = await http
-          .get(Uri.parse("http://192.168.201.236:5000/mybooking/${email}"));
+      var response = await http.get(Uri.parse(
+          "https://play-spot-git-main-rdm-jony.vercel.app/mybooking/${email}"));
       if (response.statusCode == 200) {
         List jsonResponse = jsonDecode(response.body);
         for (var i = 0; i < jsonResponse.length; i++) {

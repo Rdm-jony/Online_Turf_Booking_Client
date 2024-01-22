@@ -96,7 +96,7 @@ class BookingRepo {
     try {
       // var bookingInfo{}
       var response = await http.post(
-          Uri.parse("http://192.168.201.236:5000/bookings"),
+          Uri.parse("https://play-spot-git-main-rdm-jony.vercel.app/bookings"),
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(bookingInfo));
 
@@ -112,7 +112,7 @@ class BookingRepo {
       date, turfId, eventName, weekday) async {
     try {
       var response = await http.get(Uri.parse(
-          "http://192.168.201.236:5000/bookings/${date}?turfId=${turfId}&eventName=${eventName}&weekday=${weekday}"));
+          "https://play-spot-git-main-rdm-jony.vercel.app/bookings/${date}?turfId=${turfId}&eventName=${eventName}&weekday=${weekday}"));
       if (response.statusCode == 200) {
         var jsonResponse = jsonDecode(response.body);
         return jsonResponse;

@@ -52,7 +52,7 @@ class DashboardRepo {
     print(turfInfo);
     try {
       var response = await http.post(
-          Uri.parse("http://192.168.201.236:5000/addTurf"),
+          Uri.parse("https://play-spot-git-main-rdm-jony.vercel.app/addTurf"),
           headers: {"Content-Type": "application/json"},
           body: jsonEncode(turfInfo));
       if (response.statusCode == 200) {

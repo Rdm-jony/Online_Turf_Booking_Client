@@ -7,8 +7,8 @@ class AllUserRepo {
   static Future<List<UserModel>> fatchAllUser() async {
     try {
       List<UserModel> allUser = [];
-      var response =
-          await http.get(Uri.parse("http://192.168.201.236:5000/alluser"));
+      var response = await http.get(
+          Uri.parse("https://play-spot-git-main-rdm-jony.vercel.app/alluser"));
       if (response.statusCode == 200) {
         List jsonResponse = jsonDecode(response.body);
         for (var i = 0; i < jsonResponse.length; i++) {
@@ -24,7 +24,8 @@ class AllUserRepo {
   static Future<bool> setUserRole(userRole, email) async {
     try {
       var response = await http.post(
-          Uri.parse("http://192.168.201.236:5000/alluser/role/${email}"),
+          Uri.parse(
+              "https://play-spot-git-main-rdm-jony.vercel.app/alluser/role/${email}"),
           headers: {"Content-Type": "application/json"},
           body: jsonEncode({"role": userRole}));
       if (response.statusCode == 200) {
