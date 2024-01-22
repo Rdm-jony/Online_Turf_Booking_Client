@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "47034031627",
+    "project_id": "playspot-d009e",
+    "storage_bucket": "playspot-d009e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47034031627:android:f79b9755df712e2c00710e",
+        "android_client_info": {
+          "package_name": "com.example.playspot_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47034031627-bvgbk1mln41p77qkdlct9lvk6u7u2vi6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.playspot_client",
+            "certificate_hash": "b8f0c0bd3ee6dc3873c0bf8b8c6128a9b700fb1a"
+          }
+        },
+        {
+          "client_id": "47034031627-8m7dp8lqeq8selu39s3t0omtdaomqem6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbPqlv5WSBwmMomlMHyWWLnTcFd6ZFk_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47034031627-8m7dp8lqeq8selu39s3t0omtdaomqem6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
